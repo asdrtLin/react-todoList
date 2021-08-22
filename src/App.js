@@ -14,7 +14,9 @@ export default function App() {
           />
         </header>
         <section className="main">
-          <input type="checkbox" className="toggle-all" />
+          <input type="checkbox" id="toggle-all" className="toggle-all" />
+          <label htmlFor="toggle-all" />
+          <ul className="todo-list" />
         </section>
       </section>
     </div>
