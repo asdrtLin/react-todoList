@@ -1,11 +1,22 @@
-import React from "react";
-import "./style.css";
+import React from 'react';
+import './style.css';
 
 export default function App() {
   return (
     <div>
-      <h1>Hello StackBlitz!</h1>
-      <p>Start editing to see some magic happen :)</p>
+      <section className="todoapp">
+        <header className="header">
+          <h1>Todos</h1>
+          <input
+            type="text"
+            placeholder="What need to be done?"
+            className="new-todo"
+          />
+        </header>
+        <section className="main">
+          <input type="checkbox" className="toggle-all" />
+        </section>
+      </section>
     </div>
   );
 }
